@@ -91,7 +91,7 @@ api.interceptors.response.use(
 
 export default api;
 
-// API helpers
+// API helpers/Auth 
 export const authAPI = {
   login: (data) => api.post('/auth/login', data),
   logout: () => api.post('/auth/logout'),
