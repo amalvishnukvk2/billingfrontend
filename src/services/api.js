@@ -91,12 +91,12 @@ api.interceptors.response.use(
 
 export default api;
 
-// API helpers/Auth  
-export const authAPI = {
-  login: (data) => api.post('api/auth', data),
+// API helpers/Auth     
+export const authAPI = { 
+  login: (data) => api.post('/api/auth', data),
   logout: () => api.post('/auth/logout'),
-  me: () => api.get('/auth/me'),
-};
+  me: () => api.get('/auth/me'), 
+}; 
 
 export const productAPI = {
   getAll: (params) => api.get('/products', { params }),
